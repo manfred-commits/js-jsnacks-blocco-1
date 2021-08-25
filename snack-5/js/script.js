@@ -11,4 +11,5 @@ for(var i=0;i<6;i++){
 }
 for(var i=0;i<contenitore.length;i++){
     alert("Il contenuto dell'array in posizione "+ (i+1) + " è : "+contenitore[i]);
+    console.log(contenitore[i]);
 }
