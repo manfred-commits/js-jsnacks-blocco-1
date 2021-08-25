@@ -4,4 +4,11 @@ var contenitore = [];
 for(var i=0;i<6;i++){
     // 2) Chiedi per 6 volte all’utente di inserire un numero
     var inputUtente= parseInt(prompt("Inserisci il " + (i+1) +"° numero:"));
+    // condizione per il caso dispari
+    if(inputUtente%2==1){
+        contenitore[i]=inputUtente;
+    }
+    else{
+        contenitore[i]="Il numero inserito dall'utente non è dispari";
+    }
 }
