@@ -4,10 +4,17 @@ var contenitore = [];
 for(var i=0;i<6;i++){
     // 2) Chiedi per 6 volte all’utente di inserire un numero
     var inputUtente= parseInt(prompt("Inserisci il " + (i+1) +"° numero:"));
-    // condizione per il caso dispari
-    if(inputUtente%2==1){
-        contenitore[i]=inputUtente;
+    if(isNaN(inputUtente)==true){
+        alert("Inserisci un numero!!");
+        i--;
     }
+    else if(isNaN(inputUtente)==false){
+        // condizione per il caso dispari
+        if(inputUtente%2==1){
+            contenitore[i]=inputUtente;
+        }
+    }    
+    
 }
 for(var i=0;i<contenitore.length;i++){
     alert("Il contenuto dell'array in posizione "+ (i+1) + " è : "+contenitore[i]);
