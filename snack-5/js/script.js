@@ -8,7 +8,7 @@ for(var i=0;i<6;i++){
     if(inputUtente%2==1){
         contenitore[i]=inputUtente;
     }
-    else{
-        contenitore[i]="Il numero inserito dall'utente non è dispari";
-    }
+}
+for(var i=0;i<contenitore.length;i++){
+    alert("Il contenuto dell'array in posizione "+ (i+1) + " è : "+contenitore[i]);
 }
