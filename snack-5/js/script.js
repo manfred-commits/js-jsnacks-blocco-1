@@ -5,14 +5,14 @@ for(var i=0;i<6;i++){
     // 2) Chiedi per 6 volte all’utente di inserire un numero
     var inputUtente= parseInt(prompt("Inserisci il " + (i+1) +"° numero:"));
     // 3) Inserisci una verifica input utente, per assicurarsi che venga inserito un numero
-    if(isNaN(inputUtente)==true){
+    if(isNaN(inputUtente)){
         alert("Inserisci un numero!!");
         i--;
     }
-    else if(isNaN(inputUtente)==false){
+    else{
         // condizione per il caso dispari
         if(inputUtente%2==1){
-            contenitore.push(inputUtente);
+            contenitore.push(inputUtente);            
         }
     }     
 }
